@@ -1,0 +1,121 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    color: white;
+}
+
+/*.heads>ul{
+    display: inline;
+}*/
+
+/*.heads{
+    list-style-type: none;
+}*/
+
+/*.heads>li{
+    display: inline;
+}*/
+
+.heads>li:hover{
+    background-color: orange;
+}
+
+
+.heads{
+    background-color: black;
+    height: 100px;
+    box-sizing: border-box;
+    padding-left: 30%;
+    list-style-type: none;
+    
+}
+
+.heads>li{
+    border:2px solid black;
+    width: 20%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 1%;
+    padding: 1%;
+    display: inline;
+}
+
+.iframe{
+    border: 4px solid palevioletred;
+    margin-left: 40%;
+    margin-top: 1%;
+
+    
+}
+
+.row3{
+    margin-top: 3%;
+    height: 400px;
+    padding-left: 20%;
+    box-sizing: border-box;
+    /*margin-left: 30%;*/
+}
+
+.row3>div{
+    /*border: 2px solid red;*/
+    width: 20%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.row3>div>textarea{
+    resize: none;
+    display: block;
+    margin-left: 20%;
+}
+
+.one{
+    background-color: hotpink;
+    font-family: Arial, Helvetica, sans-serif   ;
+    max-width: 60%;
+}
+
+.two{
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace   ;
+    max-width: 60%;
+}
+
+.three{
+    background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif   ;
+    max-width: 60%;
+}
+
+.row3>div>button{
+    margin-top: 10%;
+    background-color: orange;
+    color: white;
+    border-color: orange;
+    border-radius: 10px;
+    height: 10%;
+    width: 40%;
+}
+
+.row4{
+    background-color: black;
+    margin-top: 17%;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.row4>div{
+    padding-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: xx-large;
+}
