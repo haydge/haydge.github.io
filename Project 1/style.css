@@ -1,0 +1,286 @@
+.menu, .pagetitle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu{
+    border-top: 2px solid ivory;
+}
+
+
+.menu>ul{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    width: 1000px;   
+    
+}
+
+.page{
+    
+    display: inline;
+    font-size: xx-large;
+    margin-left: 5%;
+    /*border: 2px solid red;*/
+    padding-right: 25px;
+    border-right: 2px solid black;
+}
+
+/* Home Page*/
+
+.logos{
+    height: 100px;
+}
+
+
+.logos>a{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.logos>a>img{
+    height: 100%;
+    width: 20%;
+}
+
+.logo2{
+    padding-left: 59%;
+}
+
+.pagetitle{
+    font-size: 60px;
+    animation: aurora 7s infinite;
+}
+
+@keyframes aurora {
+    0%{color: aqua;}
+    16%{color: aquamarine;}
+    33%{color: lightgreen;}
+    50%{color: lightseagreen;}
+    66%{color: lightskyblue;}
+    83%{color: lightcyan;}
+    100%{color: lightsteelblue;}
+    
+}
+
+.midback{
+    background-color: lightcyan;
+}
+
+.midback>p{
+    font-size: 42px;
+    font-style: italic;
+}
+
+.homemid{
+    /*border: 2px solid black;*/
+    background-color: lightcyan;
+    height: 1800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*.tophalf{
+    border: 2px solid red;
+    
+}*/
+
+
+
+/*.bottomhalf{
+    border: 2px solid red;
+    display: inline-flexbox;
+    
+    justify-content: left;
+    padding-left: 20% ;
+}*/
+
+
+.figimage{
+    height: 80%;
+    width: 100%;
+}
+
+.words{
+    /*border: 2px solid red;*/
+    align-content: center;
+    justify-content: center;
+    font-size: 42px;
+
+}
+
+.eventlist{
+    font-size: 45px;
+}
+
+table{
+    font-size: 40px;
+}
+
+.tablerow{
+    background-color: greenyellow;
+}
+
+.hefty{
+    background-color: pink;
+}
+
+.table1{
+    font-weight: normal;
+    text-align: left;
+}
+
+
+
+
+/* Page One */
+body{
+    background-color: thistle;
+}
+
+.pagetitle{
+    border-bottom: 2px solid ivory;
+}
+
+.onemid{
+    height: 700px;
+    margin-top: 1%;
+    border-bottom: 2px solid ivory;
+}
+
+.onemid>div{
+    height: 90%;
+    width: 31% ;
+    float: left;
+    margin-left: 1%;
+    padding: 4px;
+}
+
+.onemid>div>img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.onemid>div>textarea{
+    background-color: antiquewhite;
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    border: 5px solid mediumaquamarine;
+    border-radius: 15px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.combot{
+    font-size: 42px;
+    font-family: sans-serif;
+}
+
+
+/* Contact Page*/
+
+/*body{
+    background-color: antiquewhite;
+}*/
+
+.info>div>address>a[href^="mailto"]::before{
+    content: "📧 ";
+}
+
+.info>div>address>a[href^="tel"]::before{
+    content: "📞 ";
+}
+
+.contop{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.conmid{
+    height: 900px;  
+    margin-top: 5%;
+    
+    
+    
+    
+}
+
+.comid>div{
+    height: 100%;
+    width: 30%;
+    
+
+}
+
+
+
+
+label{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.info{
+    /*border: 2px solid red;*/
+    float: left;
+    align-content: center;
+    justify-content: left;
+    font-size: 30px;
+    
+}
+
+.contact{
+    /*border: 2px solid blue;*/
+    width: 45%;
+    margin-left: 29%;
+    padding: 4px;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+#comment{
+    width: 99%;
+    height: 100px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    }
+
+#button{
+    /*margin-left: 90%;*/
+    margin-top: 2%;
+    float: right;
+}
+
+#email{
+    float: right;
+    width: 45%;
+}
+
+#name{
+    float: left;
+    width: 45%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
