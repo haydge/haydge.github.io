@@ -1,0 +1,70 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.holder{
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.holder>div{
+    /* display: flexbox; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+
+.menubox{
+    /* background-color: turquoise; */
+    font-weight: bolder;
+    /*width: 30%;*/
+    /* align-content: center;
+    justify-content: center; */
+}
+
+.menubox>ul{
+    list-style: none;
+    /* border-image-source: url(strawberryBorder.jpg); */
+    
+}
+
+.menubox>ul>li{
+    background-color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    height: 60px;
+}
+
+.menubox>ul>li:hover{
+    background-color: blueviolet;
+    
+}
+
+.contentbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.imagebox>img{
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px goldenrod;
+    /* border-image: round; */
+    /* height: auto;
+    width: auto; */
+}
+
+.inforbox{
+    border: 2px solid maroon;
+    box-shadow: 5px 5px 5px maroon;
+    background-color: aliceblue;
+    text-align: center;
+    /* align-content: center; */
+    justify-content: center;
+}
+
