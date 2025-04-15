@@ -1,0 +1,105 @@
+body{
+    background-image: url(dow2.jpg);
+    background-size: cover;
+}
+
+.clockpart{
+        /* display: flexbox;
+        flex-wrap: wrap; */
+        /* position: absolute; */
+        height: 400px;
+        width: 400px;
+        background-image: url(clockimage.png);
+        background-size: 100% 100%;
+        /* border: 2px solid red; */
+}
+
+.clockpart>div{
+    
+    /* align-content: center;
+    justify-content: center; */
+    /* /* height: 20%; */
+    width: 40%; 
+    /* border: 2px solid red; */
+}
+
+.clockpart>div>img{
+    width: 100%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    
+}
+
+#minutehand{
+    position: relative;
+    translate: 80px 87px;
+    transform-origin: left center;
+    transform: rotate(-90deg);
+    top: 2%;
+    left: 30%;
+    animation: progression2 10s forwards;
+}
+
+#hourhand{
+    position: relative;
+    top: 43%;
+    left: 49%;
+    width: 30%;
+    animation: progression 10s forwards;
+}
+
+/* #nexus{
+    position: relative;
+    background-color: transparent;
+} */
+
+.boxpart{
+    background-color: rgb(114, 112, 112, 0.4);
+    height: 150px;
+    width: 350px;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 49%;
+    margin-top: 17%;
+}
+/* 
+#clockstart:target{
+    animation: changes 2s forwards;
+} */
+
+
+@keyframes progression {
+    /* 0%{}
+    10%{transform: rotate(3deg); transform-origin: center left;}
+    20%{transform: rotate(6deg); transform-origin: center left;}
+    30%{transform: rotate(9deg); transform-origin: center left;}
+    40%{transform: rotate(12deg); transform-origin: center left;}
+    50%{transform: rotate(15deg); transform-origin: center left;}
+    60%{transform: rotate(18deg); transform-origin: center left;}
+    70%{transform: rotate(21deg); transform-origin: center left;}
+    80%{transform: rotate(24deg); transform-origin: center left;}
+    90%{transform: rotate(27deg); transform-origin: center left;} */
+    100%{transform: rotate(30deg); transform-origin: center left;}
+}
+
+@keyframes progression2 {
+    100%{transform: rotate(270deg);}
+    /* 10%{transform: rotate(36deg); transform-origin: bottom center;}
+    20%{transform: rotate(72deg); transform-origin:  bottom center;}
+    30%{transform: rotate(108deg); transform-origin: bottom center;}
+    40%{transform: rotate(144deg); transform-origin: bottom;}
+    50%{transform: rotate(180deg); transform-origin: bottom;}
+    60%{transform: rotate(216deg); transform-origin: center bottom;}
+    70%{transform: rotate(252deg); transform-origin: center bottom;}
+    80%{transform: rotate(288deg); transform-origin: center bottom;}
+    90%{transform: rotate(324deg); transform-origin: center bottom;}
+    100%{transform: rotate(360deg); transform-origin: center bottom;} */
+}
+
+
+/* @keyframes changes {
+    100%{background-image: url(dow.jpg); background-size: contain;}    
+} */
