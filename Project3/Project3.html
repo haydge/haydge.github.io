@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Project 3</Title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="heading">
+            <h1 class="intro">What Number am I Thinking of?</h1>
+            <h2 class="description">Guess the number between 1 and 100</h2>
+        </div>
+
+        <!--General Menu-->
+        <div class="general"> 
+            <div class="uWrapper">
+                <div class="sTally">
+                    <div><p class="cScore">Score: 0</p></div>
+                    <div><p class="hScore">High Score: 0</p></div>
+                </div>
+            
+                <!-- <div class="buttonOne"> -->
+                <button class="startOver" type="button">RESET</button>
+                <!-- </div> -->
+            </div>
+                
+            <div class="mainMenu" id="mainMenu">
+                <div class="imgOne"><img src="DOW.jpg" alt="Symbol of confusion" height="200" width="250"></div>
+                <!---user entry box-->
+                <div>
+                    <form id="guessCheck" onkeydown="if(event.keyCode === 13) {
+                        alert('You pressed the enter key. Please use the Check button to enter guesses instead');
+                        return false;
+                    }" >
+                        <label for="numGuess"></label>
+                        <input type="number" name="numGuess" id="numGuess" max="100" min="1" placeholder="Guess a number" class="input" required/>
+                        <div><input class="subButt" id="play" type="button" value="Check"/></div>
+                        <button class="startOver" id="replay" type="button">Play Again?</button>    
+                    </form>
+                    
+                </div>
+                <p class="pEntry">Make a Guess!</p>
+                <!-- <div><button     type="submit" form="guessCheck">Check Number</button></div> -->
+                <!--output message-->
+            </div>
+
+            <div class="history">
+                <div><h1>Guess History: </h1></div>
+                <div class="guessHis">
+                    <ul>
+                        <!-- <li id="li1"></li> -->
+                    </ul>
+                    <!-- <p1>Help</p1><br>
+                    <p2></p2><br>
+                    <p3></p3><br>
+                    <p4></p4><br>
+                    <p5></p5><br>
+                    <p6></p6><br>
+                    <p7></p7><br>
+                    <p8></p8><br>
+                    <p9></p9><br>
+                    <p10></p10><br> -->
+                </div>
+                <!--Guess history box-->
+            </div>
+        </div>
+        
+        
+
+        <!--Winning menu-->
+        <!-- <div class="winMenu">
+            <img src="" alt="">
+            <h1>Congratulations</h1> -->
+            <!-- Winning message goes here -->
+             <!-- <button class="startOver" id="replay" type="button">Play Again?</button>
+        </div> -->
+
+        <!--Losing menu-->
+        <!-- <div class="loseMenu">
+            <img src="" alt="">
+            <h1>Too bad</h1> -->
+            <!-- Losing message goes here -->
+             <!-- <button>Play Again?</button>
+        </div> -->
+
+        
+        <script src="Project3.js"></script>
+    </body>
+</html>
