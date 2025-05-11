@@ -95,7 +95,7 @@ body{
 }
 
 .heroFirst{
-    border: 2px solid maroon;
+/*     border: 2px solid maroon; */
     height: 1200px;
     position: relative;
     
@@ -132,7 +132,7 @@ body{
 }
 
 .heroSecond{
-    border: 2px solid magenta;
+/*     border: 2px solid magenta; */
     height: 70%;
     position:relative;
 }
