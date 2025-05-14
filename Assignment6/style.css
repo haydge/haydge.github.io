@@ -1,0 +1,42 @@
+.header{
+    text-align: center;
+    height: 100px;
+}
+
+.bmiInput{
+    display: flex;
+    height: 300px;
+    /* margin-bottom: 3%; */
+    justify-content: center;
+}
+
+.bmiInput>div{
+    margin-right: 20%;
+}
+
+.bmiOutput{
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 10%;   
+}
+
+.celsConv, .farenConv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.celsConv>div, .farenConv>div{
+    margin-right: 10%;
+}
+
+.celsConvout, .farenConvout{
+    padding-top: 1%;
+}
+
+.footer{
+    margin-top: 20%;
+    text-align: center;
+
+}
