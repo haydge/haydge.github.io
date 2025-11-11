@@ -86,25 +86,25 @@
  <!-- Leaflet JavaScript -->
  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
  <script>
-   const map = L.map('map').setView([40.6770200, -73.9825170], 15);
+    const map = L.map('map').setView([40.6770200, -73.9825170], 15);
 
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
      attribution: '© OpenStreetMap contributors',
    }).addTo(map);
 
-   const marker = L.marker([40.6770200, -73.9825170]).addTo(map);
-   marker.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+    const marker = L.marker([40.649778, -73.963194]).addTo(map);
+    marker.bindPopup("<b>Flatbush (West)-Ditmas Park-Parkville</b><br>This is the location marker for <br/>Q Gardens ").openPopup();
 
-const marker1 = L.marker([40.674613, -73.987446]).addTo(map);
-   marker1.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+    const marker1 = L.marker([40.71974, -73.953394]).addTo(map);
+    marker1.bindPopup("<b>Williamsburg</b><br>McCarren Park Greenmarket ").openPopup();
 
-   const circle = L.circle([40.6770200, -73.9825170], {
+    const circle = L.circle([40.649778, -73.963194], {
      color: 'red',
      fillColor: '#f03',
      fillOpacity: 0.5,
      radius: 100,
-   }).addTo(map);
-   circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+    }).addTo(map);
+    circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
 
     const circle1 = L.circle([40.674613, -73.987446], {
      color: 'red',
@@ -113,9 +113,44 @@ const marker1 = L.marker([40.674613, -73.987446]).addTo(map);
      radius: 100,
    }).addTo(map);
    circle1.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+
+     const marker2 = L.marker([40.69288, -73.97391]).addTo(map);
+    marker2.bindPopup("<b>Fort Greene</b><br>This is the location marker for <br/>Fort Greene Greenmarket ").openPopup();
+
+    const circle2 = L.circle([40.6770200, -73.9825170], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+    }).addTo(map);
+    circle2.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+
+    const marker3 = L.marker([40.6547305, -74.0018481]).addTo(map);
+    marker3.bindPopup("<b>Sunset Park (West)</b><br>This is the location marker for <br/>Los Colibríes Community Garden ").openPopup();
+
+    const circle3 = L.circle([40.6770200, -73.9825170], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+    }).addTo(map);
+    circle3.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+
+    const marker4 = L.marker([40.6689286, -73.876838]).addTo(map);
+    marker4.bindPopup("<b>East New York-New Lots</b><br>This is the location marker for <br/>East New York Farms: 400 Montauk Ave Block Association Garden ").openPopup();
+
+    const circle4 = L.circle([40.6770200, -73.9825170], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+    }).addTo(map);
+    circle4.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+
  </script>
 </body>
 </html>
+
 
 
 
