@@ -58,7 +58,7 @@
 </html>
 
  -->
-
+<!-- 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -115,6 +115,63 @@
      circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
      
   </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Interactive Map with OpenStreetMap and Leaflet.js</title>
+ <!-- Leaflet CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+ <style>
+   h1 {
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+   }
+   #map {
+     width: 100%;
+     height: 600px;
+   }
+ </style>
+</head>
+<body>
+ <h1>Interactive Map with OpenStreetMap and Leaflet.js</h1>
+ <div id="map"></div>
+
+ <!-- Leaflet JavaScript -->
+ <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+ <script>
+   const map = L.map('map').setView([40.6770200, -73.9825170], 15);
+
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     attribution: '© OpenStreetMap contributors',
+   }).addTo(map);
+
+   const marker = L.marker([40.6770200, -73.9825170]).addTo(map);
+   marker.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+
+const marker1 = L.marker([40.674613, -73.987446]).addTo(map);
+   marker1.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+
+   const circle = L.circle([40.6770200, -73.9825170], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+   }).addTo(map);
+   circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+
+    const circle1 = L.circle([40.674613, -73.987446], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+   }).addTo(map);
+   circle1.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+ </script>
 </body>
 </html>
 
