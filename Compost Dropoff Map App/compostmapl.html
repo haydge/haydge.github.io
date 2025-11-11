@@ -93,29 +93,30 @@
  
  <!-- Leaflet JavaScript -->
  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>     
-const map = L.map('map').setView([36.7854, -119.7922], 15); 
+ <script>     
+    const map = L.map('map').setView([36.7854, -119.7922], 15); 
  
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-attribution: '© OpenStreetMap contributors',
-}).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    }).addTo(map);
 
 
-const marker = L.marker([36.7854, -119.7922]).addTo(map);
-marker.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+    const marker = L.marker([36.7854, -119.7922]).addTo(map);
+    marker.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
 
 
- const circle = L.circle([36.787833, -119.782712], {
- color: 'red',
- fillColor: '#f03',
- fillOpacity: 0.5,
- radius: 100,
- }).addTo(map);
- circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+     const circle = L.circle([36.787833, -119.782712], {
+     color: 'red',
+     fillColor: '#f03',
+     fillOpacity: 0.5,
+     radius: 100,
+     }).addTo(map);
+     circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
      
- </script>
+  </script>
 </body>
 </html>
+
 
 
