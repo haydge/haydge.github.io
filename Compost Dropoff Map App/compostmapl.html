@@ -86,7 +86,7 @@
  <!-- Leaflet JavaScript -->
  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
  <script>
-    const map = L.map('map').setView([40.6770200, -73.9825170], 15);
+    const map = L.map('map').setView([40.674613, -73.987446], 15);
 
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
      attribution: '© OpenStreetMap contributors',
@@ -112,12 +112,12 @@
      fillOpacity: 0.5,
      radius: 100,
    }).addTo(map);
-   circle1.bindPopup("<b>N 12th St and Driggs Ave</b><br>This is a circle overlay for <br/>McCarren Park Greenmarket");
+   // circle1.bindPopup("<b>N 12th St and Driggs Ave</b><br>This is a circle overlay for <br/>McCarren Park Greenmarket");
 
      const marker2 = L.marker([40.69288, -73.987440]).addTo(map);
     marker2.bindPopup("<b>Fort Greene</b><br>This is the location marker for <br/>Fort Greene Greenmarket ").openPopup();
 
-    const circle2 = L.circle([40.674607, -73.9825170], {
+    const circle2 = L.circle([40.674613, -73.987446], {
      color: 'red',
      fillColor: '#f03',
      fillOpacity: 0.5,
