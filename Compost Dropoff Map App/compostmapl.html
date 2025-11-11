@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
@@ -57,3 +57,62 @@
 
 </html>
 
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Interactive Map with OpenStreetMap and Leaflet.js</title>
+ <!-- Leaflet CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+ 
+</head>
+<body>
+ <h1>Interactive Map with OpenStreetMap and Leaflet.js</h1>
+ <div id="map"></div>
+ 
+ 
+ <style>
+ 
+ h1 {
+ font-family: 'Poppins', sans-serif;
+ text-align: center;
+ }
+ 
+ /* Set the size of the map container */
+ #map {
+ width: 100%; /* Set the width to 100% of the container */
+ height: 600px;  /* Set a specific height for the map */
+ }
+ 
+ 
+ </style>
+ 
+ <!-- Leaflet JavaScript -->
+ <script src="https://unpkg.com/leaflet/dist/leaflet.js">
+     // Initialize the map and set its view to a specific location and zoom level
+const map = L.map('map').setView([36.7854, -119.7922], 15); // Coordinates: Latitude, Longitude; Zoom level: 13
+ 
+// Add OpenStreetMap tiles to the map
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '© OpenStreetMap contributors',
+}).addTo(map);
+
+// Add a marker to the map at the same location
+const marker = L.marker([36.7854, -119.7922]).addTo(map);
+marker.bindPopup("<b>EAST GARLAND AVENUE</b><br>This is the location marker for <br/>East Garland Avenue Parking Lot. ").openPopup();
+
+// Add a circle overlay to a different location
+ const circle = L.circle([36.787833, -119.782712], {
+ color: 'red',
+ fillColor: '#f03',
+ fillOpacity: 0.5,
+ radius: 100,
+ }).addTo(map);
+ circle.bindPopup("<b>MANCHESTER GATE ELEMENTARY SCHOOL</b><br>This is a circle overlay for <br/>Manchester Gate Elementary School.");
+ </script>
+</body>
+</html>
