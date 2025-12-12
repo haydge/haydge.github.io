@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Audio and Video Lab</title>
+</head>
+<body>
+  <h1>An example of a webpage with a video player</h1>
+  <section>
+    <h2>Sonic the Eggdog by Zamsire</h2>
+    <p>Press play on the video to hear it with the song below. Leave the video muted unless you would like to hear the original audio.</p>
+    <video id="clip" controls width="640" muted>
+      <source src="https://archive.org/download/sonic-the-eggdog/sonic%20the%20eggdog.mp4" type="video/mp4"> </video>
+  </section>
+  <section>
+    <h2>Inner Norm by Gut Health</h2>
+    <p>To continue listening to the song you after the video ends you can press pause.</p>
+    <audio id="song" controls>
+        <source src="https://archive.org/download/gut-health-electric-party-chrome-girl-03-shut-down/Gut%20Health%20-%20Electric%20Party%20Chrome%20Girl%20-%2001%20Inner%20Norm.mp3">
+    </audio>
+  </section>
+  <script>
+    const audio = document.getElementById('song');
+    const video = document.getElementById('clip');
+    const maxDuration = 53;
+
+    //video.addEventListener("play", (event) => {
+    //    audio.play();
+    //});
+     video.addEventListener('play', () => {
+        if (video.play){
+            audio.play();
+        }
+
+
+    });
+
+    video.addEventListener('pause', () =>{
+        if(video.pause){
+        audio.pause();
+        }
+    });
+    
+    /*audio.addEventListener('play', () => {
+        if (audio.stopTimer) clearTimeout(audio.stopTimer);
+
+        audio.stopTImer = setTimeout(() => {
+            audio.pause();
+            audio.currentTime = 0;
+        }, maxDuration * 1000);
+    });
+    audio.addEventListener('timeupdate', () => {
+        if (audio.currentTime >= maxDuration) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });*/
+  </script>
+</body>
+</html>
